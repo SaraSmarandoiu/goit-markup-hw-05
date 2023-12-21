@@ -46,7 +46,7 @@ p {
   color: var(--logo-color);
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #404bbf;
 }
 
 .menu.link::after {
@@ -528,7 +528,7 @@ img {
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.data-modal-close {
+.modal-button {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -542,6 +542,6 @@ img {
   margin: 1px solid rgba(0, 0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
-  transition: background-colour 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+  transition: background-colour 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
