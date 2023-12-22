@@ -504,11 +504,13 @@ img {
 }
 .app-link.link {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
 }
 .app-link.link:hover,
 .app-link.link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transform: translateY(0%);
 }
 .modal {
   position: fixed;
@@ -561,8 +563,26 @@ img {
   border: none;
   fill: #ffffff;
 }
-.close-icon {
+svg.close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 8px;
   height: 8px;
+}
+.image-portfolio {
+  position: relative;
+  overflow: hidden;
+}
+.app-description {
+  position: absolute;
+  top: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--word-color);
+  padding: 40px 32px;
+  background-color: var(--brand-color);
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
 }
