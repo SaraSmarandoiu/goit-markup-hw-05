@@ -50,7 +50,7 @@ p {
 .menu.link.plus {
   color: var(--focus-color);
 }
-menu.link::after {
+.menu.link::after {
   content: "";
   display: block;
   position: absolute;
