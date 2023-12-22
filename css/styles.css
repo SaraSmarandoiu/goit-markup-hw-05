@@ -51,6 +51,7 @@ p {
 
 .menu.link::after {
   content: "";
+  display: block;
   position: absolute;
   left: 0;
   bottom: -1px;
@@ -67,11 +68,12 @@ p {
 .address {
   font-style: normal;
 }
-.contacts {
+.contacts.link {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--contacts-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts.link:hover,
 .contacts.link:focus {
@@ -190,6 +192,10 @@ p {
   padding: 12px 24px;
   border: 1px solid var(--list-color);
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0, 0.2, 1);
 }
 .button-filter:hover,
 .button-filter:focus {
@@ -398,6 +404,8 @@ img {
   align-items: center;
   justify-content: center;
   color: #8e8f99;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-link.link:hover {
   border-color: var(--focus-color);
@@ -436,6 +444,7 @@ img {
   background-color: var(--brand-color);
   border-radius: 50%;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media.link:hover {
   background-color: var(--focus-color);
@@ -485,6 +494,7 @@ img {
   height: 100%;
   background-color: var(--brand-color);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-media-footer.link:hover {
   background-color: #31d0aa;
@@ -523,8 +533,8 @@ img {
   width: 408px;
   min-height: 584px;
   background: #fcfcfc;
-  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0, 0.2);
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -539,7 +549,7 @@ img {
   align-items: center;
   justify-content: center;
   background-color: #e7e9fc;
-  margin: 1px solid rgba(0, 0, 0, 0, 0.1);
+  margin: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
   transition: background-colour 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -549,8 +559,10 @@ img {
 .modal-button:focus {
   background-color: #404bbf;
   border: none;
-  fill: #ffffff
+  fill: #ffffff;
 }
 .close-icon {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 8px;
+  height: 8px;
 }
